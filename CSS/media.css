@@ -1,0 +1,372 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+@media (max-width: 70em) {
+  .container {
+    max-width: 100rem;
+    padding: 0 2.4rem;
+    margin: 0 auto 1.6rem;
+  }
+  img {
+    /* transform: scale(60%); */
+    height: 90%;
+    width: 90%;
+  }
+  .img-feature {
+    width: 60%;
+    /* height: 100%; */
+  }
+  .hero-img {
+    margin-top: 14rem;
+  }
+
+  .heading-primary {
+    font-size: 4.6rem;
+  }
+  .li-nav-header:last-child {
+    margin-left: 29rem;
+  }
+  .logo-header {
+    height: 30%;
+    width: 30%;
+  }
+  .header {
+    justify-content: space-between;
+    padding: 2rem 2rem;
+  }
+  .grid--3--cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* ************************* */
+  .btn-mobile-nav {
+    display: block;
+  }
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+  .nav-toggle .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  .nav-toggle .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-toggle .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  /* WE CAN SELECT WITH ANY ATTRIBUTE ELEMENT[] */
+
+  .nav-toggle .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  .ul-nav-header {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .li-nav-header:last-child {
+    margin-left: 0;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    font-size: 2.6rem;
+  }
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  header {
+    padding: 0.5rem 1rem 6.5rem;
+
+    /* padding: 0 3.2rem; */
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+  .sec-features {
+    padding-bottom: 5rem;
+  }
+  .how2-features {
+    gap: 2rem;
+  }
+  .img-feature {
+    width: 49%;
+  }
+  .main-nav {
+    /* z-index: 1; */
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+
+    transition: all 0.5s ease-in;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+  .hero-img {
+    width: 50vh;
+    height: 50vh;
+    margin-left: 18rem;
+    margin-top: -8px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  /* header a {
+    margin-right: 49rem;
+  } */
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+  /* TOGGLE CLASS  */
+  /* .nav-open .main-nav { */
+  /* HERE IS NOT CLASS FOR A PARENT ELEMENT AND A CHILD ELEMENT, BUT A TOGGLE CLASS WHEN IT ACTIVE */
+  .nav-toggle .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-toggle .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  /* MY BURGER ICON  *******/
+  .nav-toggle .menu-icn .menu-spn:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle .menu-icn .menu-spn:first-child {
+    top: 6px;
+    transform: rotate(45deg);
+  }
+
+  .nav-toggle .menu-icn .menu-spn:last-child {
+    top: 6px;
+    transform: rotate(-45deg);
+  }
+  /* ***************** */
+  /* ACTIVE STATE IN .NAV-TOGGLE */
+
+  .nav-toggle .menu-icn:active .menu-spn:first-child,
+  .nav-toggle .menu-icn:active .menu-spn:last-child {
+    top: 12px;
+  }
+  .nav-toggle .menu-icn:active .menu-spn:first-child {
+    transform: rotate(-45deg);
+  }
+  .nav-toggle .menu-icn:active .menu-spn:last-child {
+    transform: rotate(45deg);
+  }
+  .nav-toggle .menu-icn:active .menu-spn:nth-child(2) {
+    opacity: 1;
+  }
+  /* ****************** */
+  .nav-toggle .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+  /* ************************************* */
+
+  .how2-feature {
+    width: 14rem;
+  }
+  .plat-head {
+    width: 61rem;
+    margin: 0 auto 8.8rem;
+  }
+  body {
+    color: #9aaec2;
+  }
+  footer .grid {
+    column-gap: 2.8rem;
+  }
+  footer .flex {
+    gap: 0.5rem;
+  }
+  .p-info,
+  .spn-more,
+  .p-footer {
+    font-size: 1.5rem;
+  }
+  .a-footer {
+    font-size: 1.5rem;
+  }
+  .icon-inner,
+  .ionicon,
+  svg {
+    height: 92%;
+    width: 92%;
+  }
+  .logo {
+    margin: 1.2rem;
+  }
+  .grid-last {
+    grid-template-columns: auto auto;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+@media (max-width: 44em) {
+  /* .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  } */
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+@media (max-width: 34em) {
+  .container {
+    max-width: 54rem;
+  }
+
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2--cols,
+  .grid--3--cols,
+  .grid--4--cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-last {
+    grid-template-columns: auto auto;
+  }
+  .h1-hero-primary {
+    width: 89%;
+  }
+  .div-one-feature {
+    text-align: center;
+  }
+  .p-info {
+    font-size: 2.4rem;
+  }
+  .how2-features {
+    width: 100%;
+  }
+  .plat-head {
+    width: 100%;
+  }
+}
+
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */

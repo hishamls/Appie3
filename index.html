@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="lunch your apps in one application">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="..//Images/favicon3.png" type="image/x-icon">
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <title>Appie&dash;lunch your apps in one application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="..//CSS/general.css" />
+    <link rel="stylesheet" href="..//CSS/style.css" />
+    <link rel="stylesheet" href="..//CSS/media.css" />
+  </head>
+
+  <body class="body">
+    <header class="flex header  light">
+
+      <div class="scroller"></div>
+
+      <a href="#">
+      <img class="logo" src="../Images/logo.png" alt="Appie logo" />
+      </a>
+
+      <button id="btn-dark" class="btn btn-toggle light" >Light/Dark</button>
+
+      <button class="menu-icn" id="btn-header-nav">
+        <span class="menu-spn"></span>
+        <span class="menu-spn"></span>
+        <span class="menu-spn"></span>
+      </button>
+
+      <nav class="main-nav">
+        <ul class="ul-nav-header">
+          <li class="li-nav-header"><a class="btn btn-nav-header" href="#home">Home</a></li>
+          <li class="li-nav-header">
+            <a class="btn btn-nav-header" href="#">Services&nbsp;&blacktriangledown;</a>
+          </li>
+          <li class="li-nav-header">
+            <a class="btn btn-nav-header" href="#"
+              >Pages&nbsp;&blacktriangledown; </a >
+          </li>
+          <li class="li-nav-header">
+            <a class="btn btn-nav-header" href="#"
+              >News&nbsp;&blacktriangledown;</a>
+          </li>
+          <li class="li-nav-header"><a class="btn btn-nav-header" href="#contact">Contacts</a></li>
+          <li class="li-nav-header"><a class="btn btn-nav-header" href="#download">Get started</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+       <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+
+    </header>
+
+    <main>
+      <!-- SECTION HERO  -->
+      <section class="sec-hero" id="home">
+        <div class="hero-box container grid grid--2--cols">
+          <div class="hero-text flex flex-col">
+            <h1 class="h1-hero-primary">
+              Ready to lunch your apps in one
+              <em class="em-hero">Application</em>
+            </h1>
+            <input id="e-mail" type="text" placeholder="info@appie.com  &rarr;">
+            <p class="p-hero">Find the pest application in the appie.</p>
+            <div class="costumers-box">
+              <div class="costumers-imgs">
+                <img
+                  class="img-customer"
+                  src="..//Images/people/customer-1.jpg"
+                  alt="customer-1"
+                />
+                <img
+                  class="img-customer"
+                  src="..//Images/people/customer-2.jpg"
+                  alt="customer-2"
+                />
+                <img
+                  class="img-customer"
+                  src="..//Images/people/customer-5.jpg"
+                  alt="customer-5"
+                />
+                <img
+                  class="img-customer"
+                  src="..//Images/people/customer-4.jpg"
+                  alt="customer-4"
+                />
+              </div>
+              <div class="customers-text">
+                <p class="h6-customers">30K</p>
+                <p class="feedback">Feedback</p>
+              </div>
+            </div>
+          </div>
+
+          <img
+            class="hero-img"
+            src="..//Images/hero.png"
+            alt="appie on mobile"
+          />
+        </div>
+      </section>
+
+      <!-- SECTION HOW  -->
+      <section class="sec-how" id="how">
+        <div class="container">
+          <!-- HEAD  -->
+          <div class="head-how  flex">
+            <div>
+            <h2 class="h2-heading-secondary">How does it works</h2>
+            <p class="p-info">More than one feature</p>
+            </div>
+            <div class="feature">
+            <a class="btn btn-feature" href="#">View all features &rarr;</a>
+            </div>
+          </div>
+          <!-- FEATURES  -->
+          <div class="div-features  grid grid--3--cols">
+          <div class="div-one-feature">
+            <svg
+              class="icon home-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+              />
+            </svg>
+            <h3 class="h3-heading-tertiary">Fast and intuitive</h3>
+            <p class="p-info">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere,
+              quae non molestias doloribus unde consectetur aliquam eligendi
+            </p>
+            <span class="spn-more"> Read more..&rarr;</span>
+          </div>
+          <div class="div-one-feature">
+            <svg
+              class="icon elec-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
+              />
+            </svg>
+            <h3 class="h3-heading-tertiary">Fast and intuitive</h3>
+            <p class="p-info">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere,
+              quae non molestias doloribus unde consectetur aliquam eligendi
+            </p>
+            <span class="spn-more"> Read more..&rarr;</span>
+          </div>
+          <div class="div-one-feature">
+            <svg
+              class="icon lock-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+              />
+            </svg>
+            <h3 class="h3-heading-tertiary">Fast and intuitive</h3>
+            <p class="p-info">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere,
+              quae non molestias doloribus unde consectetur aliquam eligendi
+            </p>
+            <span class="spn-more"> Read more..&rarr;</span>
+          </div>
+          <div class="div-one-feature">
+            <svg
+              class="icon home-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+              />
+            </svg>
+            <h3 class="h3-heading-tertiary">Fast and intuitive</h3>
+            <p class="p-info">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere,
+              quae non molestias doloribus unde consectetur aliquam eligendi
+            </p>
+            <span class="spn-more"> Read more..&rarr;</span>
+          </div>
+          <div class="div-one-feature">
+            <svg
+              class="icon elec-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
+              />
+            </svg>
+            <h3 class="h3-heading-tertiary">Fast and intuitive</h3>
+            <p class="p-info">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere,
+              quae non molestias doloribus unde consectetur aliquam eligendi
+            </p>
+            <span class="spn-more"> Read more..&rarr;</span>
+          </div>
+          <div class="div-one-feature">
+            <svg
+              class="icon lock-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+              />
+            </svg>
+            <h3 class="h3-heading-tertiary">Fast and intuitive</h3>
+            <p class="p-info">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere,
+              quae non molestias doloribus unde consectetur aliquam eligendi
+            </p>
+            <span class="spn-more"> Read more..&rarr;</span>
+          </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- SECTION MARKETING  -->
+      <section class="sec-marketing" id="market">
+
+        <div class="market-box container grid grid--2--cols">
+
+          <img
+            class="img-market"
+            src="..//Images/about-thumb.png"
+            alt="cartoon man on laptop"
+          />
+          <div class="text-market grid">
+
+            <div class="head-txt-market">
+              <p class="intensive-title">Marketing</p>
+              <h2 class="h2-heading-secondary">Make a lasting impression with appie.</h2>
+              <p class="p-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quod aut dignissimos dolorem perferendis, nobis odio necessitatibus.</p>
+            </div>
+            
+            <div class="body-txt-market gird grid--2--cols">
+
+              <div class="care-col">
+
+                <div class="heading-col flex">
+                  <svg class="icon correct-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                  <h3 class="h3-heading-tertiary">Carefully designed</h3>
+                  </div>
+                <p class="p-info">consectetur adipisicing elit. Quae quod aut dignissimos dolorem perferendis </p>
+              </div>
+
+              <div class="choose-col">
+
+                  <div class="heading-col flex">
+                    <svg class="icon correct-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                    <h3 class="h3-heading-tertiary">Choose an app</h3>
+                  </div>
+                  <p class="p-info">consectetur adipisicing elit. Quae quod aut dignissimos dolorem perferendis </p>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- SECTION FEATURES  -->
+    <section class="sec-features " id="features">
+      <div class="container features-box">
+        <!-- HEAD  -->
+        <div class="head-features  flex flex-col">
+            <h2 class="h2-feaures h2-heading-secondary">Wherever you need us the most</h2>
+            <p class="p-info">More than one feature</p>
+          </div>
+        <!-- FEATURES TEXT & IMG -->
+        <div class="features-body  grid grid--2--cols">
+        <div class="txt-features  flex flex-col">
+          <div class="txt-feature">
+            <div class="sub-txt-box">
+            <h3 class="h3-feature h3-heading-tertiary">Well integrated</h3>
+            <p class="p-info info-feature ">
+              Lorem ipsum dolor sit, 
+            </p>
+            </div>
+          </div>
+
+          <div class="txt-feature">
+            <div class="sub-txt-box">
+            <h3 class="h3-feature h3-heading-tertiary">Clean and modern design</h3>
+            <p class="p-info info-feature">
+              Lorem ipsum dolor sit, 
+            </p>
+            </div>
+          </div>
+          
+          <div class="txt-feature">
+            <div class="sub-txt-box">
+            <h3 class="h3-feature h3-heading-tertiary">Light and dark mode</h3>
+            <p class="p-info info-feature">
+              Lorem ipsum dolor sit,
+            </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="img-feature-box">
+          <img class="img-feaure-2" src="..//Images/features-thumb-2.png" alt="">
+        </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- SECTION PRICES  -->
+     <section class="sec-price" id="price">
+      <div class="container price-box">
+        <!-- SECTION PRICE HEADING  -->
+        <div class=" price-head-box">
+        <h2 class="h2-heading-secondary">Simple Pricing for everyone</h2>
+        <p class="p-info">Many offers that suitable for everyone</p>
+        <a class="btn btn-price" href="#">Yearly</a>
+        </div>
+        <!-- SECTION PRICE OFFERS  -->
+        <div class="  price-offers-box grid grid--3--cols">
+        <!-- OFFER 1 -->
+        <div class=" offer">
+          <h3 class="h3-heading-tertiary">Fresh</h3>
+          <p class="p-info"><b>$</b><span class="spn-price">40</span>/month</p>
+          <p class="p-info">get your 14 day <strong>free</strong> trail</p>
+          <hr>
+          <ul>
+            <li class="p-info">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+              60-day chat history</li>
+            <li class="p-info">
+             <ion-icon name="checkmark-circle-outline"></ion-icon>
+              15 GB cloud storage</li>
+            <li class="p-info"> 
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+              24/7 support</li>
+            
+          </ul>
+          <a class="btn btn-offer" href="#">Choose plan</a>
+        </div>
+        <!-- OFFER 2 -->
+        <div class=" offer offer-nominated">
+          <h3 class="h3-heading-tertiary">Sweet</h3>
+          <p class="p-info"><b>$</b><span class="spn-price">16</span>/month</p>
+          <p class="p-info">get your 14 day <strong>free</strong> trail</p>
+          <hr>
+          <ul>
+            <li class="p-info">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+              60-day chat history</li>
+            <li class="p-info">
+             <ion-icon name="checkmark-circle-outline"></ion-icon>
+              15 GB cloud storage</li>
+            <li class="p-info"> 
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+              24/7 support</li>
+            
+          </ul>
+        </div>
+        <!-- OFFER 3 -->
+        <div class=" offer">
+          <h3 class="h3-heading-tertiary">Juicy</h3>
+          <p class="p-info"><b>$</b><span class="spn-price">27</span>/month</p>
+          <p class="p-info">get your 14 day <strong>free</strong> trail</p>
+          <hr>
+          <ul>
+            <li class="p-info">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+              60-day chat history</li>
+            <li class="p-info">
+             <ion-icon name="checkmark-circle-outline"></ion-icon>
+              15 GB cloud storage</li>
+            <li class="p-info"> 
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+              24/7 support</li>
+            
+          </ul>
+          <a class="btn btn-offer" href="#">Choose plan</a>
+        </div>
+        </div>  
+      </div>
+    </section>
+
+    <!-- SECTION HOW 2  -->
+    <section class="sec-how-2" id="how-2">
+      <div class="how2-box1 container flex flex-col">
+        <!-- HEAD  -->
+        <div class="head-how  flex">
+        <div>
+          <h2 class="h2-heading-secondary">How does it works</h2>
+          <p class="p-info">More than one feature</p>
+        </div>
+        </div>
+        <!-- FEATURES ICONS  -->
+        <div class="how2-features  flex">
+        <div class="how2-feature flex flex-col">
+          <i class="how2-icon" ><img src="..//Images/icons/counter-icon-1.svg" alt="counter record"></i>
+          <span class="count-how"> 45K+</span>
+          <p class="p-info">
+            Lorem ipsum
+          </p>
+        </div>
+        <div class="how2-feature flex flex-col">
+          <i class="how2-icon" ><img src="..//Images/icons/counter-icon-2.svg" alt="counter record"></i>
+          <span class="count-how"> 108K+</span>
+          <p class="p-info">
+            Lorem ipsum
+          </p>
+        </div>
+        <div class="how2-feature flex flex-col">
+          <i class="how2-icon" ><img src="..//Images/icons/counter-icon-3.svg" alt="counter record"></i>
+          <span class="count-how"> 307+</span>
+          <p class="p-info">
+            Lorem ipsum
+          </p>
+        </div>
+        <div class="how2-feature flex flex-col">
+          <i class="how2-icon" ><img src="..//Images/icons/counter-icon-4.svg" alt="counter record"></i>
+          <span class="count-how"> 725+</span>
+          <p class="p-info">
+            Lorem ipsum
+          </p>
+        </div>
+        </div>
+        <!-- FEATURES VIDEOS  -->
+        <div class="vids-how2  flex">
+          <img class="img-feature" src="..//Images/video-thumb-1.jpg" alt="feature video">
+          <img class="img-feature" src="..//Images/video-slide-1.jpg" alt="feature video">
+        </div>
+      <div class="text-how2  flex flex-col">
+          <h2 class="how2-h2">Watch two videos to learn how</h2>
+          <p class="p-info">More than one feature Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis accusantium illum eius ut error cupiditate neque, ea quaerat dicta unde nisi inventore numquam, minus repellendus ab magnam hic maxime!</p>
+          <a class="btn btn-feature" href="#">View all features &rarr;</a>
+    </div>
+
+    </section>
+
+    <!-- SECTION DOWNLOAD -->
+    <section class="download-stores-sec " id="download">
+      <div class="container">
+      <p class="intensive-title">Download</p>
+      <p class="h2-heading-secondary">App is available for free in</p>
+      <p class="p-info">Esse modi nam quia facilis, culpa accusantium excepturi corporis! Ipsa delectus consequatur dolores</p>
+      <div class="btns flex">
+      <a class=" btn-download-1" href="#"><img class="img-down-ios" src="..//Images/app-store.png" alt="ios download"></a>
+      <a class=" btn-download-2" href="#"><img class="img-down-google" src="..//Images/Google_Play-Badge-Logo.wine.svg" alt="google play download"></a>
+      </div>
+    </div>
+    </section>
+
+    <!-- SECTION PLATFORMS  -->
+    <section class="platforms-sec " id="plats">
+      <div class="platforms-box  container">
+        <div class=" plat-head ">
+        <h2 class="h2-heading-secondary">Appie works best with your favorite platforms</h2>
+          <p class="p-info">Join over 40,000 users worldwide</p>
+        </div>
+
+        <div class="plat-imgs-1  flex ">
+        <img class="plat-img" src="..//Images/sponsers/sponser-1.png" alt="">
+        <img class="plat-img" src="..//Images/sponsers/sponser-2.png" alt="">
+        <img class="plat-img" src="..//Images/sponsers/sponser-3.png" alt="">
+        <img class="plat-img" src="..//Images/sponsers/sponser-4.png" alt="">
+        <img class="plat-img" src="..//Images/sponsers/sponser-5.png" alt="">
+        <img class="plat-img" src="..//Images/sponsers/sponser-6.png" alt="">
+        </div>
+        <div class="plat-imgs-2  flex ">
+        <img class="plat-img" src="..//Images/sponsers/sponser-7.png" alt="">
+        <img class="plat-img" src="..//Images/sponsers/sponser-8.png" alt="">
+        <img class="plat-img" src="..//Images/sponsers/sponser-9.png" alt="">
+        <img class="plat-img" src="..//Images/sponsers/sponser-10.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION TESTIMONIAL  -->
+    <section class="testimonial-sec " id="testi">
+      <div class=" testimonial-box  grid grid--2--cols">
+        <div class="img-col flex flex-col">
+          <img class="testi-img" src="..//Images/people/customer-1.jpg" alt="Adam image">
+          <div class="stars-div flex">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star-half"></ion-icon>
+          </div>
+          <p class="p-footer">(4.7) review</p>
+        </div>
+
+        <div class="div-txt-col flex flex-col">
+          <p class="p-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam repudiandae, totam nostrum pariatur, in quasi impedit quam debitis ea nobis fuga cupiditate assumenda dolores id doloribus? Quae magnam ipsum dolores.</p>
+          <p class="h4-heading-fourth">Hanson Deck</p>
+          <p class="p-title">Web developer</p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    </main>
+
+  </body>
+
+  <footer id="contact">
+    <div class="container">
+    <div class="footer-box  grid grid--footer">
+      <div class="logo-col flex flex-col flex-footer">
+        <a href="#">
+        <img class="logo" src="../Images/logo.png" alt="Appie logo" />
+        </a> 
+        <p class="p-footer">Lorem ipsum Unde doloribus cupiditate autem nihil, as</p>
+        <a class="a-footer" href="#"> <span class="spn-more"> Read more..&rarr;</span> </a>
+        <div class="social-div flex">
+          <a href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        </div>
+      </div>
+
+      <div class="company-col flex flex-col flex-footer">
+          <h4 class="h4-heading-fourth ">Company</h4>
+
+          <nav>
+            <ul>
+              <li> <a href="#" class="a-footer">About us</a> </li>
+              <li> <a href="#" class="a-footer">Services</a> </li>
+              <li> <a href="#" class="a-footer">Blog</a> </li>
+              <li> <a href="#" class="a-footer">Studies</a> </li>
+              <li> <a href="#" class="a-footer">Contact us</a> </li>
+          </ul>
+        </nav>
+
+      </div>
+      <div class="support-col flex flex-col flex-footer">
+          <h4 class="h4-heading-fourth ">Support</h4>
+
+          <nav>
+            <ul>
+              <li><a href="#" class="a-footer">Community</a></li>
+              <li><a href="#" class="a-footer">Resource</a></li>
+              <li><a href="#" class="a-footer">FQAS</a></li>
+              <li><a href="#" class="a-footer">Privacy policy</a></li>
+              <li><a href="#" class="a-footer">Careers</a></li>
+          </ul>
+          </nav>
+          
+      </div>
+
+      <div class="touch-col flex flex-col flex-footer">
+          <h4 class="h4-heading-fourth">Get in touch</h4>
+          <div class="flex">
+          <span>
+          <ion-icon name="mail-outline"></ion-icon>
+          </span>
+          <a class="a-footer appie-mail">
+            support@appie.com</a>
+          </div>
+          <div class="flex">
+          <span>
+          <ion-icon name="call-outline"></ion-icon>
+          </span>
+          <p class="p-footer appie-phone">
+            (002) 010 9020 9759</p>
+          </div>
+
+            <div class="flex">
+            <span>
+            <ion-icon name="location-outline"></ion-icon>
+            </span>
+          <p class="p-footer appie-address">
+            623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+          </div>
+      </div>
+
+    </div>
+
+    <hr>
+    <div class="last  grid grid--3--cols grid-last">
+      <a class=" btn-download-footer-1" href="#"><img class="img-down-footer img-down-ios" src="..//Images/app-store.png" alt="ios download"></a>
+      <a class=" btn-download-footer-2" href="#"><img class="img-down-footer img-down-google" src="..//Images/Google_Play-Badge-Logo.wine.svg" alt="google play download"></a>
+      <p class=" p-footer copy">Copy right &copy;appie <span class="year">2021</span> all right received</p>
+    </div>
+  </div>
+  </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- this script is not working in below  -->
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="..//Javascript/script.js"></script>
+
+</html>
